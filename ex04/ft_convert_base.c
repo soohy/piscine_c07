@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi_base.c                                     :+:      :+:    :+:   */
+/*   ft_convert_base.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: soohkim <soohkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/10 17:26:56 by soohkim           #+#    #+#             */
-/*   Updated: 2021/04/13 10:34:30 by soohkim          ###   ########.fr       */
+/*   Created: 2021/04/14 22:23:16 by soohkim           #+#    #+#             */
+/*   Updated: 2021/04/14 22:27:01 by soohkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int g_sign;
 
-int	is_space(char c)
+int		is_space(char c)
 {
 	if ((c >= 9 && c <= 13) || c == 32)
 		return (1);
 	return (0);
 }
 
-int	is_valid(char *base)
+int		is_valid(char *base)
 {
 	int i;
 	int j;
@@ -57,7 +57,7 @@ char	*skip_ss(char *str)
 	return (str);
 }
 
-int	get_nb(char s, char *base)
+int		get_nb(char s, char *base)
 {
 	int i;
 
@@ -71,7 +71,7 @@ int	get_nb(char s, char *base)
 	return (-1);
 }
 
-int	ft_atoi_base(char *str, char *base)
+int		ft_atoi_base(char *str, char *base)
 {
 	int b;
 	int n_base;

@@ -6,7 +6,7 @@
 /*   By: soohkim <soohkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/13 07:23:48 by soohkim           #+#    #+#             */
-/*   Updated: 2021/04/13 07:23:50 by soohkim          ###   ########.fr       */
+/*   Updated: 2021/04/15 04:14:51 by soohkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(void)
 	int max;
 	int i;
 
-	min = -21;
+	min = 22;
 	max = 22;
 	i = 0;
 	while (i < max - min)

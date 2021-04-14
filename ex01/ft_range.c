@@ -6,7 +6,7 @@
 /*   By: soohkim <soohkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/13 05:02:55 by soohkim           #+#    #+#             */
-/*   Updated: 2021/04/13 07:18:39 by soohkim          ###   ########.fr       */
+/*   Updated: 2021/04/15 04:17:28 by soohkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	*ft_range(int min, int max)
 	int			*tab;
 	long long	i;
 
-	tab = 0;
 	if (min < max)
 	{
 		tab = (int *)malloc(sizeof(int) * (long long)(max - min));
@@ -30,6 +29,7 @@ int	*ft_range(int min, int max)
 			i++;
 			min++;
 		}
+		return (tab);
 	}
-	return (tab);
+	return (0);
 }

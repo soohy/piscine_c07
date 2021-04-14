@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: soohkim <soohkim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/04/14 09:46:02 by soohkim           #+#    #+#             */
+/*   Updated: 2021/04/14 09:46:22 by soohkim          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-int	ft_strlen(char *str)
+int		ft_strlen(char *str)
 {
 	int i;
 
@@ -39,9 +51,9 @@ char	*ft_strjoin_sub(char *tab, char **str, char *sep)
 
 char	*ft_strjoin(int size, char **str, char *sep)
 {
-	char *tab;
-	int s;
-	int i;
+	char	*tab;
+	int		s;
+	int		i;
 
 	s = 0;
 	i = -1;

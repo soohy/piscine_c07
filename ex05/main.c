@@ -5,25 +5,30 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: soohkim <soohkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/14 09:46:34 by soohkim           #+#    #+#             */
-/*   Updated: 2021/04/14 09:46:44 by soohkim          ###   ########.fr       */
+/*   Created: 2021/04/15 02:13:32 by soohkim           #+#    #+#             */
+/*   Updated: 2021/04/15 04:10:32 by soohkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*ft_strjoin(int size, char **str, char *sep);
+char	**ft_split(char *str, char *charset);
 
-int		main(int ac, char **av)
+int		main(void)
 {
-	char *tab;
-	char *sep;
+	char	**tab;
+	char	*str;
+	char	*charset;
+	int		i;
 
-	sep = "...";
-	if (ac > 1)
+	str = "Hello World Seoul Apple";
+	charset = " o";
+	tab = ft_split(str, charset);
+	i = 0;
+	while (tab[i])
 	{
-		tab = ft_strjoin(ac - 1, av + 1, sep);
-		printf("%s\n", tab);
+		printf("%s\n", tab[i]);
+		i++;
 	}
 	return (0);
 }
